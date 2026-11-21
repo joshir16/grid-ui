@@ -1,8 +1,60 @@
 @import "tailwindcss";
 
-@theme {
-  /* Using Zinc palette as a sophisticated baseline */
-  --grid-primary: #09090b;
+:root {
+  --grid-primary: #18181b;
   --grid-primary-fg: #fafafa;
+  --grid-danger: #dc2626;
+  --grid-danger-fg: #fef2f2;
+
+  --grid-bg: #ffffff;
+  --grid-fg: #09090b;
+  --grid-surface: #ffffff;
+  --grid-border: #e4e4e7;
   --grid-radius: 0.375rem;
+}
+
+.dark {
+  --grid-primary: #fafafa;
+  --grid-primary-fg: #18181b;
+  --grid-danger: #ef4444;
+  --grid-danger-fg: #fef2f2;
+
+  --grid-bg: #09090b;
+  --grid-fg: #fafafa;
+  --grid-surface: #18181b;
+  --grid-border: #27272a;
+}
+
+@theme inline {
+  --color-grid-primary: var(--grid-primary);
+  --color-grid-primary-fg: var(--grid-primary-fg);
+  --color-grid-primary-hover: color-mix(
+    in srgb,
+    var(--grid-primary) 88%,
+    black
+  );
+
+  --color-grid-danger: var(--grid-danger);
+  --color-grid-danger-fg: var(--grid-danger-fg);
+  --color-grid-danger-hover: color-mix(in srgb, var(--grid-danger) 88%, black);
+
+  --color-grid-bg: var(--grid-bg);
+  --color-grid-fg: var(--grid-fg);
+  --color-grid-surface: var(--grid-surface);
+  --color-grid-surface-fg: var(--grid-fg);
+  --color-grid-muted: color-mix(
+    in srgb,
+    var(--grid-fg) 6%,
+    var(--grid-surface)
+  );
+  --color-grid-muted-hover: color-mix(
+    in srgb,
+    var(--grid-fg) 12%,
+    var(--grid-surface)
+  );
+  --color-grid-muted-fg: color-mix(in srgb, var(--grid-fg) 60%, var(--grid-bg));
+  --color-grid-border: var(--grid-border);
+  --color-grid-ring: var(--grid-primary);
+
+  --radius-grid: var(--grid-radius);
 }

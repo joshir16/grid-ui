@@ -5,3 +5,4 @@ import "./index.css";
 export { cn } from "./utils/cn";
 
 // 3. We will export here next!
+export { Button, type ButtonProps } from "@/components/button/Button";
