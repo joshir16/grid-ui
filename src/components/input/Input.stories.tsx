@@ -8,7 +8,7 @@ const meta = {
   argTypes: {
     size: {
       control: "select",
-      options: ["xl", "lg", "md", "icon"],
+      options: ["xl", "lg", "md"],
     },
   },
 } satisfies Meta<typeof Input>;
@@ -21,5 +21,6 @@ export const Playground: Story = {
     variant: "default",
     size: "md",
     placeholder: "Enter name",
+    type: "text",
   },
 };
