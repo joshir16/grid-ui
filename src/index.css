@@ -58,3 +58,20 @@
 
   --radius-grid: var(--grid-radius);
 }
+
+@utility spinner-ring {
+  background:
+    radial-gradient(farthest-side, currentColor 94%, #0000) top /
+      var(--spinner-thickness, 4px) var(--spinner-thickness, 4px) no-repeat,
+    conic-gradient(#0000 30%, currentColor);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - var(--spinner-thickness, 4px)),
+    #000 0
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - var(--spinner-thickness, 4px)),
+    #000 0
+  );
+}
