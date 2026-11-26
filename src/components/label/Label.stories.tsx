@@ -20,12 +20,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Playground: Story = {
-  args: {
-    size: "md",
-  },
-};
-
 export const WithInput: Story = {
   render: (args) => (
     <div className="flex items-center gap-3 ">

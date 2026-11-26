@@ -38,6 +38,9 @@
   --color-grid-danger-fg: var(--grid-danger-fg);
   --color-grid-danger-hover: color-mix(in srgb, var(--grid-danger) 88%, black);
 
+  --color-grid-success: #16a34a;
+  --color-grid-warning: #d97706;
+
   --color-grid-bg: var(--grid-bg);
   --color-grid-fg: var(--grid-fg);
   --color-grid-surface: var(--grid-surface);
